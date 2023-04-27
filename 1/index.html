@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+    <form name="sign_up">
+        <h1 class="header">Please sign up</h1>
+        <input type="text" class="first"placeholder="First name" pattern="[a-zA-Z]{3,20}" required><br>
+        <input type="text" class="last" placeholder="Last name" pattern="[a-zA-Z]{3,20}" required><br>
+        <input type="email" class="email" placeholder="Email address" pattern=".\S+@[a-zA-Z]+\.[a-zA-Z]+" required><br>
+        <input type="password" class="pass" placeholder="Password" pattern="\w{8,15}" required><br>
+        <label><input type="checkbox" class="checkbox" name="checkbox">I agree width a Privacy Policy</label><br>
+        <input type="button" disabled="disabled" class ="button" name = "signup" value="Sign Up">
+    </form>
+</div>
+    <div class="modal hide">
+        <div class="check">
+            <img class="checked" src="checked.png" alt="check">
+        </div>
+        <div class="great">
+            <p class="text">Great!</p>
+            <p class="text1">Your account has been created successfully.</p>
+            <button class="start">Start Exploring
+                <img class="arrow" src="arrow.png" alt="">
+            </button>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
